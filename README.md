@@ -1,9 +1,9 @@
 # 分层解耦引导的情感可控VQ-VAE 3D说话人脸生成方法
-## 简介（Introduction）
+## 简介
 项目位置：https://github.com/chen114514sheng/Project1
 
 本项目结合语音、文本、身份向量，在VQ-VAE结构的基础上，通过分层解耦的方法生成说话人脸视频。
-## 方法概述（Method）
+## 方法概述
 项目整体流程如下：
 
 第一阶段
