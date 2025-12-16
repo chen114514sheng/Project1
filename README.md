@@ -13,4 +13,51 @@
 ## 数据集
 3D人脸数据来自3DMEAD，语音数据来自MEAD，文本数据来自TA-MEAD。
 
-数据集通过DataProcess/mead0.py预处理，通过DataProcess/mead1.py划分。
+数据集预处理：
+```
+DataProcess/mead0.py
+```
+数据集划分：
+```
+DataProcess/mead1.py
+```
+## 训练过程
+训练第一阶段模型：
+```
+VQVAE2/Train.py
+```
+训练第二阶段模型：
+```
+Generation/Train.py
+```
+## 测试与生成
+评估第一阶段模型的重建效果：
+```
+VQVAE2/Predict.py
+```
+评估第二阶段模型的生成效果，保存生成结果：
+```
+Genetion/Predict.py
+```
+生成说话人脸视频：
+```
+Render0.py #也可用于生成其他模型的说话人脸视频
+```
+本模型与其他模型比较：
+```
+Render1.py #合成对比视频
+Quality.py #生成heatmap
+```
+## 注意事项
+模型参数、权重保存路径、文件路径通过以下文件设置：
+```
+config.yaml
+```
+以下文件中的路径同样需要设置：
+```
+DataProcess/mead0.py
+DataProcess/mead1.py
+Render0.py
+Render1.py
+Quality.py
+```
